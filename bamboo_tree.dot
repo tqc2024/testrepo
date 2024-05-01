@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<node &#35;0<br/>cumin &le; 0.5<br/>samples = 3127<br/>value = [1193, 442, 598, 799, 95]<br/>class = asian>, fillcolor="#fbeadd"] ;
+1 [label=<node &#35;1<br/>roasted_sesame_seed &le; 0.5<br/>samples = 2654<br/>value = [1092, 438, 237, 796, 91]<br/>class = asian>, fillcolor="#fbebdf"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<node &#35;2<br/>vegetable &le; 0.5<br/>samples = 2409<br/>value = [1088, 433, 237, 560, 91]<br/>class = asian>, fillcolor="#f8dbc6"] ;
+1 -> 2 ;
+3 [label=<node &#35;3<br/>samples = 2175<br/>value = [1046, 390, 234, 414, 91]<br/>class = asian>, fillcolor="#f6d2b8"] ;
+2 -> 3 ;
+4 [label=<node &#35;4<br/>samples = 234<br/>value = [42, 43, 3, 146, 0]<br/>class = korean>, fillcolor="#9694f1"] ;
+2 -> 4 ;
+5 [label=<node &#35;5<br/>thai_pepper &le; 0.5<br/>samples = 245<br/>value = [4, 5, 0, 236, 0]<br/>class = korean>, fillcolor="#4340e6"] ;
+1 -> 5 ;
+6 [label=<node &#35;6<br/>samples = 243<br/>value = [3, 4, 0, 236, 0]<br/>class = korean>, fillcolor="#423fe6"] ;
+5 -> 6 ;
+7 [label=<node &#35;7<br/>samples = 2<br/>value = [1, 1, 0, 0, 0]<br/>class = asian>, fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label=<node &#35;8<br/>fish &le; 0.5<br/>samples = 473<br/>value = [101, 4, 361, 3, 4]<br/>class = indian>, fillcolor="#75edd6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<node &#35;9<br/>soy_sauce &le; 0.5<br/>samples = 428<br/>value = [70, 4, 353, 1, 0]<br/>class = indian>, fillcolor="#62ead1"] ;
+8 -> 9 ;
+10 [label=<node &#35;10<br/>samples = 399<br/>value = [51, 1, 346, 1, 0]<br/>class = indian>, fillcolor="#57e9ce"] ;
+9 -> 10 ;
+11 [label=<node &#35;11<br/>samples = 29<br/>value = [19, 3, 7, 0, 0]<br/>class = asian>, fillcolor="#f1ba93"] ;
+9 -> 11 ;
+12 [label=<node &#35;12<br/>yogurt &le; 0.5<br/>samples = 45<br/>value = [31, 0, 8, 2, 4]<br/>class = asian>, fillcolor="#efb184"] ;
+8 -> 12 ;
+13 [label=<node &#35;13<br/>samples = 40<br/>value = [31, 0, 3, 2, 4]<br/>class = asian>, fillcolor="#eca06a"] ;
+12 -> 13 ;
+14 [label=<node &#35;14<br/>samples = 5<br/>value = [0, 0, 5, 0, 0]<br/>class = indian>, fillcolor="#39e5c5"] ;
+12 -> 14 ;
+}
